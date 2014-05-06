@@ -16,7 +16,7 @@ DEV_ENV = True
 PROD_ENV = False
 
 #site infos
-SITE_NAME = ''
+SITE_NAME = 'year'
 
 #project directories
 PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__).decode('utf-8')).replace('\\', '/')
