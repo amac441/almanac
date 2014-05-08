@@ -1,0 +1,41 @@
+
+{% extends "base.html" %}
+
+
+
+{% block content %}
+
+{% load bootstrap_tags %}
+
+
+			<div id="nav" class="grid_9 omega">
+				<ul class="navigation">
+					<a href='/'>HOME</a>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+
+
+	<div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
+		<div id="content1" class="container clearfix">
+
+			<div class="grid_12 content">
+
+
+                    <h1> <p>Lets Grow!</p><p>  Give us some info to get you started.</p></h1>
+
+                        <form action="" method='POST'>
+                            {% csrf_token %}
+    <h3>
+                            {{form|as_bootstrap}}
+</h3>
+                            <button type="submit", name="signup_submit">Signup</button>
+                        </form>
+
+            </div>
+         </div>
+    </div>
+
+{% endblock %}

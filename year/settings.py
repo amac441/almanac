@@ -20,9 +20,9 @@ SITE_NAME = 'year'
 
 #project directories
 PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__).decode('utf-8')).replace('\\', '/')
-MEDIA_ROOT = os.path.join(PROJECT_ROOT, "media")
-STATIC_ROOT = os.path.join(PROJECT_ROOT, "static")
-TEMPLATE_ROOT = os.path.join(PROJECT_ROOT, "year/templates")
+MEDIA_ROOT = os.path.join(PROJECT_ROOT, "../media")
+STATIC_ROOT = os.path.join(PROJECT_ROOT, "../static")
+TEMPLATE_ROOT = os.path.join(PROJECT_ROOT, "../templates")
 MEDIA_URL = '/media/'
 ADMIN_MEDIA_PREFIX = '/media/admin/'
 STATIC_URL = '/static/'
@@ -33,10 +33,16 @@ TEMPLATE_DIRS = (
     TEMPLATE_ROOT,
 )
 
+GANALYTICS_TRACKING_CODE = 'UA-50077606-2'
+
 DATABASES = {
     'default': {
-    'ENGINE' : 'django.db.backends.sqlite3',
-    'NAME' : r'/home/andy/Documents/sqlite/django.db',
+        'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
+        'NAME': 'ajkrell$years',                      # Or path to database file if using sqlite3.
+        'USER': 'ajkrell',                      # Not used with sqlite3.
+        'PASSWORD': 'gogogo',                  # Not used with sqlite3.
+        'HOST': 'mysql.server',                      # Set to empty string for localhost. Not used with sqlite3.
+        'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
     }
 }
 
@@ -148,9 +154,12 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # Uncomment the next line to enable the admin:
-    # 'django.contrib.admin',
+    'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
+    'ganalytics',
+    'app',
+    'django_forms_bootstrap',
 )
 
 # A sample logging configuration. The only tangible logging

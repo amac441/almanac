@@ -1,56 +1,14 @@
-<!DOCTYPE HTML>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
-<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
-<!--[if IE 8]><html class="no-js lt-ie9"><![endif]-->
-<!--[if gt IE 8]><!--><html class="no-js" ng-app><!--<![endif]-->
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
-	<title>ready.set.grow</title>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,600' rel='stylesheet' type='text/css'>
-
-	<link rel="stylesheet" href="../templates/css/normalize.css" type="text/css" media="screen">
-	<link rel="stylesheet" href="../templates/css/grid.css" type="text/css" media="screen">
-	<link rel="stylesheet" href="../templates/css/style.css" type="text/css" media="screen">
-	<!-- <link rel="stylesheet" href="css/style.min.css" type="text/css" media="screen"> -->
-	<link rel="stylesheet" href="../templates/css/font-awesome.min.css" type="text/css" media="screen">
-
-	<!--[if IE]>
-	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+{% extends "base.html" %}
 
 
-<!--
- _      _____  / /________  ____ ___  ___     / /_____     / /_/ /_  ___
-| | /| / / _ \/ / ___/ __ \/ __ `__ \/ _ \   / __/ __ \   / __/ __ \/ _ \
-| |/ |/ /  __/ / /__/ /_/ / / / / / /  __/  / /_/ /_/ /  / /_/ / / /  __/
-|__/|__/\___/_/\___/\____/_/ /_/ /_/\___/   \__/\____/   \__/_/ /_/\___/
-
-                                    __
-   _________  __  _______________  / /
-  / ___/ __ \/ / / / ___/ ___/ _ \/ /
- (__  ) /_/ / /_/ / /  / /__/  __/_/
-/____/\____/\__,_/_/   \___/\___(_)
-
--->
-
-</head>
-
-<body ng-controller="langLoved">
-
-	<div class="menu">
-		<div class="container clearfix">
-
-			<div id="logo" class="grid_3">
-				5years
-			</div>
+{% block content %}
 
 			<div id="nav" class="grid_9 omega">
 				<ul class="navigation">
 					<li data-slide="1">HOME</li>
-					<li data-slide="2">FOR</li>
+					<li data-slide="2">WHO</li>
 					<li data-slide="3">WHY</li>
+					<li data-slide="4">WHAT</li>
 				</ul>
 			</div>
 
@@ -66,7 +24,7 @@
 				<p>
 					<blockquote>putting CARE into CAREER growth</a></blockquote>
 				</p>
-				<a href="mailto:info@mettentotwetten.com" class="btn">Sign Up</a>
+				<a href="/signup" class="btn">Sign Up</a>
 			</div>
 
 		</div>
@@ -129,7 +87,7 @@
     					<li>Externally managed "to do list" so that you can spend less time analyzing and more time progressing</li>
     					<li>Points and Rewards system for completing key tasks and milestones</li>
     					<li>Access to key individuals to help grow your network</li>
-    					<li>Ability to see the "Plans" of your peers, icons, and proteges. </li>
+    					<li>Ability to see the "Plans" of your icons, peers, and proteges. </li>
     					<li>Distilled access to the same research tools that professional counselors use to plot your path</li>
                         <li>Dashboards to visualize your progress, learnings, and interests</li>
                         <li>Focus on local, free, and high yeild growth options</li>
@@ -220,7 +178,7 @@
 	<!------------------------------- WHO WHAT WE HEAR ---------------------->
 
 
-	<div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
+	<div class="slide" id="slide2" data-slide="4" data-stellar-background-ratio="0.5">
 
 		<div class="container clearfix">
 
@@ -289,43 +247,33 @@
 	<!---------------------------- NEXT STEPS ------------------------------->
 
 		<div class="grid_12 content quote">
-			<a href="#" class="btn tab" data-slide="2">NEXT STEPS</a>
+			<a href="#" class="btn tab" >NEXT STEPS</a>
 		</div>
 
 	</div>
 
-
-
-	<div class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0.5">
+<div id="slide5" data-slide="5">
 		<div class="container clearfix">
 
-			<div class="grid_12 about">
+			<div class="grid_12 content">
+			    <br>
+			    <br>
+			    <br>
 			    <b>
 				<p>Help us make this the best tool it can be. Send us an email at info@mettentotwetten.com or visit our blog to find updates (<a href="http://www.mettentot.com/blog">MettenTot Blog</a>)
 				</p></b>
+				<br>
+				<p>
+				<a href="/signup" class="btn">Sign Up</a>
+				</p>
 			</div>
 
 		</div>
 	</div>
 
 
-	<footer class="grid_12">
-		<div class="container clearfix">
-			<p>Copyright 2014 MTW Ventures  - www.mettentot.com </p>
-			<div class="social">
-				<a href="#" title="Linkedin"><i class="icon-linkedin-sign"></i></a>
-				<a href="#" title="Facebook"><i class="icon-facebook-sign"></i></a>
-				<a href="#" title="Youtube"><i class="icon-youtube"></i></a>
-			</div>
-		</div>
-	</footer>
+{% endblock %}
 
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-	<script type="text/javascript" src="../templates/js/jquery.stellar.min.js"></script>
-	<script type="text/javascript" src="../templates/js/waypoints.min.js"></script>
-	<script type="text/javascript" src="../templates/js/jquery.easing.1.3.js"></script>
-	<script type="text/javascript" src="../templates/js/angular.min.js"></script>
-	<script type="text/javascript" src="../templates/js/scripts.js"></script>
 
-</body>
-</html>
+
+

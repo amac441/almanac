@@ -378,6 +378,68 @@ text-align: center;
 padding: 0;
 height: 441px;
 }
+
+
+/*slide 5*/
+
+
+#slide5{
+background:url(img/field.jpg);
+height: 300px;
+}
+#slide5 h1 {
+font-size: 3.8em;
+letter-spacing: -3px;
+line-height: 0px;
+color:#8a8683;
+font-weight: 700;
+}
+#slide5 h2 {
+font-size: 2em;
+color: #8a8683;
+
+line-height: 0px;
+padding-bottom:20px;
+font-weight: 400;
+}
+#test{
+background-color:#bde2df;
+color:#ffffff;
+text-align:center;
+font-size: 2em;
+font-weight: 400;
+}
+#slide5 p {
+text-align: justify;
+}
+#slide5 .grid_12 p {
+text-align: center;
+font-size: 1.3em;
+color: #FAE99F;
+font-weight: 650;
+}
+#slide5 .grid_3 img {
+border: 2px solid #558FCF;
+opacity: 1;
+-webkit-transition: all 150ms linear;
+-moz-transition: all 150ms linear;
+-o-transition: all 150ms linear;
+-ms-transition: all 150ms linear;
+transition: all 150ms linear;
+}
+#slide5 .grid_3 img:hover {
+border: 2px solid #111;
+opacity: 0.8;
+}
+
+#slide5 blockquote {
+	font-size: 1.6em;
+	color: #fff;
+}
+
+
+
+
 #contacts {
 margin: 0;
 padding: 130px 0 0 0;
@@ -421,7 +483,7 @@ padding:0;
 }
 .navigation li{
 float: left;
-width:25%;
+width:20%;
 padding:0;
 }
 .slide{
