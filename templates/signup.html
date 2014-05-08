@@ -1,11 +1,10 @@
 
-{% extends "base.html" %}
+{% extends "landing_base.html" %}
 
 
 
 {% block content %}
 
-{% load bootstrap_tags %}
 
 
 			<div id="nav" class="grid_9 omega">
@@ -29,7 +28,7 @@
                         <form action="" method='POST'>
                             {% csrf_token %}
     <h3>
-                            {{form|as_bootstrap}}
+                            {{form}}
 </h3>
                             <button type="submit", name="signup_submit">Signup</button>
                         </form>

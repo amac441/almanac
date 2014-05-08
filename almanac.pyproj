@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <SchemaVersion>2.0</SchemaVersion>
+        <ProjectGuid>{82d471b4-f475-41ba-8bdd-e9cf342105f3}</ProjectGuid>
+        <ProjectHome />
+        <StartupFile />
+        <SearchPath />
+        <WorkingDirectory>.</WorkingDirectory>
+        <OutputPath>.</OutputPath>
+        <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+        <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+    <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+    <ItemGroup>
+        <Compile Include="manage.py" />
+        <Compile Include="app\__init__.py" />
+        <Compile Include="app\admin.py" />
+        <Compile Include="app\forms.py" />
+        <Compile Include="app\models.py" />
+        <Compile Include="app\tests.py" />
+        <Compile Include="app\views.py" />
+        <Content Include="templates\base.html" />
+        <Content Include="templates\index.html" />
+        <Content Include="templates\signup.html" />
+        <Content Include="templates\thanks.html" />
+        <Compile Include="root\__init__.py" />
+        <Compile Include="root\settings.py" />
+        <Compile Include="root\urls.py" />
+        <Compile Include="root\wsgi.py" />
+        <Content Include="templates\css\font-awesome.min.css" />
+        <Content Include="templates\css\grid.css" />
+        <Content Include="templates\css\normalize.css" />
+        <Content Include="templates\css\style.css" />
+        <Content Include="templates\font\fontawesome-webfont.svg" />
+        <Content Include="templates\js\angular.min.js" />
+        <Content Include="templates\js\jquery.easing.1.3.js" />
+        <Content Include="templates\js\jquery.stellar.min.js" />
+        <Content Include="templates\js\scripts.js" />
+        <Content Include="templates\js\waypoints.min.js" />
+        <Content Include="templates\css\img\field.png" />
+        <Content Include="templates\css\img\client1.jpg" />
+        <Content Include="templates\css\img\clients.jpg" />
+        <Content Include="templates\css\img\field.jpg" />
+        <Content Include="templates\css\img\profile.jpg" />
+        <Content Include="templates\css\img\wheat.jpg" />
+        <Content Include="root\templates\index.html" />
+        <Content Include="root\templates\signup.html" />
+        <Content Include="root\templates\css\font-awesome.min.css" />
+        <Content Include="root\templates\css\grid.css" />
+        <Content Include="root\templates\css\normalize.css" />
+        <Content Include="root\templates\css\style.css" />
+        <Content Include="root\templates\font\fontawesome-webfont.svg" />
+        <Content Include="root\templates\js\angular.min.js" />
+        <Content Include="root\templates\js\jquery.easing.1.3.js" />
+        <Content Include="root\templates\js\jquery.stellar.min.js" />
+        <Content Include="root\templates\js\scripts.js" />
+        <Content Include="root\templates\js\waypoints.min.js" />
+        <Content Include="root\templates\css\img\field.png" />
+        <Content Include="root\templates\css\img\client1.jpg" />
+        <Content Include="root\templates\css\img\clients.jpg" />
+        <Content Include="root\templates\css\img\field.jpg" />
+        <Content Include="root\templates\css\img\profile.jpg" />
+        <Content Include="root\templates\css\img\wheat.jpg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Folder Include="app" />
+        <Folder Include="root" />
+        <Folder Include="root\templates" />
+        <Folder Include="root\templates\css" />
+        <Folder Include="root\templates\css\img" />
+        <Folder Include="root\templates\font" />
+        <Folder Include="root\templates\js" />
+        <Folder Include="templates" />
+        <Folder Include="templates\css" />
+        <Folder Include="templates\css\img" />
+        <Folder Include="templates\font" />
+        <Folder Include="templates\js" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+</Project>
