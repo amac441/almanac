@@ -16,12 +16,12 @@ DEV_ENV = True
 PROD_ENV = False
 
 #site infos
-SITE_NAME = 'year'
+SITE_NAME = 'almanac'
 
 #project directories
 PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__).decode('utf-8')).replace('\\', '/')
 MEDIA_ROOT = os.path.join(PROJECT_ROOT, "../media")
-STATIC_ROOT = os.path.join(PROJECT_ROOT, "../static")
+STATIC_ROOT = os.path.join(PROJECT_ROOT, "/static")
 TEMPLATE_ROOT = os.path.join(PROJECT_ROOT, "../templates")
 MEDIA_URL = '/media/'
 ADMIN_MEDIA_PREFIX = '/media/admin/'
@@ -150,10 +150,10 @@ MIDDLEWARE_CLASSES = (
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'year.urls'
+ROOT_URLCONF = 'root.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'year.wsgi.application'
+WSGI_APPLICATION = 'root.wsgi.application'
 
 
 INSTALLED_APPS = (
