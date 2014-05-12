@@ -35,27 +35,27 @@ TEMPLATE_DIRS = (
 
 GANALYTICS_TRACKING_CODE = 'UA-50077606-2'
 
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-#        'NAME': 'ajkrell$years',                      # Or path to database file if using sqlite3.
-#        'USER': 'ajkrell',                      # Not used with sqlite3.
-#        'PASSWORD': 'gogogo',                  # Not used with sqlite3.
-#        'HOST': 'mysql.server',                      # Set to empty string for localhost. Not used with sqlite3.
-#        'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
-#    }
-#}
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'almanac', # Or path to database file if using sqlite3.
-        'USER': 'root', # Not used with sqlite3.
-        'PASSWORD': 'gogogo', # Not used with sqlite3.
-        'HOST': 'localhost', # Set to empty string for localhost. Not used with sqlite3.
-        'PORT': '', # Set to empty string for default. Not used with sqlite3.
+        'NAME': 'ajkrell$years',                      # Or path to database file if using sqlite3.
+        'USER': 'ajkrell',                      # Not used with sqlite3.
+        'PASSWORD': 'gogogo',                  # Not used with sqlite3.
+        'HOST': 'mysql.server',                      # Set to empty string for localhost. Not used with sqlite3.
+        'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
+#         'NAME': 'almanac', # Or path to database file if using sqlite3.
+#         'USER': 'root', # Not used with sqlite3.
+#         'PASSWORD': 'gogogo', # Not used with sqlite3.
+#         'HOST': 'localhost', # Set to empty string for localhost. Not used with sqlite3.
+#         'PORT': '', # Set to empty string for default. Not used with sqlite3.
+#     }
+# }
 
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
