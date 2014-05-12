@@ -1,279 +1,39 @@
-{% extends "landing_base.html" %}
+﻿{% extends "base.html" %}
 
+{% load i18n %}
 
-{% block content %}
+{% block extra_head %}
 
-			<div id="nav" class="grid_9 omega">
-				<ul class="navigation">
-					<li data-slide="1">HOME</li>
-					<li data-slide="2">WHO</li>
-					<li data-slide="3">WHY</li>
-					<li data-slide="4">WHAT</li>
-				</ul>
-			</div>
+<!---------- CONTROLLERS AND SERVICES ------------->
+<!-- angular-seed resources  -->
 
-		</div>
-	</div>
+<script src="{{ STATIC_URL }}app/js/angular/services/services.js"></script>
+<script src="{{ STATIC_URL }}app/js/angular/services/AppService.js"></script>
 
+<script src="{{ STATIC_URL }}app/js/angular/controllers/controllers.js"></script>
+<script src="{{ STATIC_URL }}app/js/angular/controllers/AppController.js"></script>
+<script src="{{ STATIC_URL }}app/js/angular/controllers/HomeController.js"></script>
 
-	<div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
-		<div id="content1" class="container clearfix">
-
-			<div class="grid_12 content">
-				<h1>WELCOME TO 5YEARS</i></h1>
-				<p>
-					<blockquote>putting CARE into CAREER growth</a></blockquote>
-				</p>
-				<a href="/signup" class="btn">Sign Up</a>
-			</div>
-
-		</div>
-
-	<!------------------- OVERVIEW ------------------------------------------->
-
-		<div class="grid_12 content quote">
-			<div class="container clearfix">
-				<h4>OVERVIEW:</h4>
-				<p>5years is a free tool to help counselors and job seekers manage and monitor the complex career landscape.
-
-				  It offers a comprehensive toolsuite to help the two groups research, define, and monitor an individual's career plan. </p>
-			</div>
-
-
-	<!--------------- FOR PEOPLE -------------------->
-
-			<a href="#counselors" class="btn tab" data-slide="2">FOR CAREER COUNSELORS</a>
-			<a href="#career seekers" class="btn tab" data-slide="3">FOR CAREER SEEKERS</a>
-			<a href="#students" class="btn tab" data-slide="4">FOR STUDENTS</a>
-
-
-
-		</div>
-	</div>
-
-
-	<!--------------- SCREENSHOTS -------------------->
-
-	<div name="counselors" class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
-		<div class="container clearfix">
-
-			<div class="grid_12 mission">
-				<!--<p><blockquote>"You can have everything in life you want, if you will just help other people get what they want." - Zig Ziglar-->
-				<!--</blockquote></p>-->
-			</div>
-
-			<div class="grid_12">
-
-				<div class="bloc1 grid_12">
-                    <div class="grid_1"></div>
-    				<div class="box grid_10" >
-    					<span class="lovedOne">For Counselors</span>
-    					<div class="grid_10" ><h3><ul>
-    					<li>Aggregated, up-to-date access to the latest jobs data and learning content</li>
-    					<li>Access to Dashboard and Detailed view of all clients</li>
-    					<li>Ability to view client's calendars and quickly assign tasks, send messages, and schedule meetings</li>
-                        <li>Automated task assignment and followup messaging</li>
-    					<li>Macro data on counselees and their progress over time</li>
-    					</ul></h3>
-    					</div>
-    				</div>
-                </div>
-
-	            <div class="bloc1 grid_12">
-                    <span class="grid_1"></span>
-    				<div class="box grid_10" >
-    					<div class="lovedOne">For Career Seekers</div>
-    					<div class="grid_10" ><h3><ul>
-    					<li>Externally managed "to do list" so that you can spend less time analyzing and more time progressing</li>
-    					<li>Points and Rewards system for completing key tasks and milestones</li>
-    					<li>Access to key individuals to help grow your network</li>
-    					<li>Ability to see the "Plans" of your icons, peers, and proteges. </li>
-    					<li>Distilled access to the same research tools that professional counselors use to plot your path</li>
-                        <li>Dashboards to visualize your progress, learnings, and interests</li>
-                        <li>Focus on local, free, and high yeild growth options</li>
-    					</ul></h3>
-    					</div>
-    				</div>
-                </div>
-
-				<div class="bloc1 grid_12">
-                    <div class="grid_1"></div>
-    				<div class="box grid_10" >
-    					<span class="lovedOne">For Students</span>
-    					<div class="grid_10" ><h3><ul>
-    					<li>Custom access to your College or University's learning curriculum</li>
-    					<li>Recurring appointments with Career Counselors</li>
-    					<li>Access to University sponsored job boards and research sites</li>
-
-    					</ul></h3></div>
-    				</div>
-                </div>
-
-				<!--	<div class="grid_1"></div>-->
-				<!--	<div class="box grid_5" height:500px>-->
-				<!--		<span class="lovedOne">Birds Eye View of All Counselees</span>-->
-				<!--		<img src="../templates/css/img/clients.jpg" >-->
-				<!--	</div>-->
-
-				<!--	<div class="box grid_5" height:500px>-->
-				<!--		<span class="lovedOne">Detailed Time-Saving Dashboard</span>-->
-				<!--		<img src="../templates/css/img/client1.jpg" >-->
-				<!--	</div>-->
-				<!--</div>-->
-
-				<!--<div class="bloc1 grid_12">-->
-				<!--	<div class="grid_1"></div>-->
-
-				<!--	<div class="box grid_10" >-->
-				<!--		<span class="lovedOne">Comprehensive Reporting and Analytics Tools</span>-->
-				<!--		<h3>Testing and Image</h3>-->
-				<!--	</div>-->
-				<!--</div>-->
-
-
-			</div>
-
-
-		</div>
-
-
-		<!--------------- WHY -------------------->
-
-		<div class="grid_12 content quote">
-			<a href="#seekers" class="btn tab" data-slide="2">WHY WE'RE HERE</a>
-		</div>
-
-	</div>
-
-
-<!-------------------- WHY STATISTICS ----------------------------------->
-
-	<div name="seekers" class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0.5">
-		<div class="container clearfix">
-
-			<div class="grid_12 about">
-				<p><blockquote> "The achievement of difficult goals entails not only talent but also the sustained and focused application of talent over time." - Mike Matthews
-				</blockquote></p>
-
-                <p>People tend to only focus on the growth of their bank accounts, not the growth of their greatest asset  - their skills and knowledge. As a result, only 13% of young adults feel satisfied in their jobs.
-
-				</p>
-
-				<p>
-				The idea is that by reducing the friction between counselors and counselees, and by taking the guessing out of career planning, we can create a more productive, motivated, and satisfied workforce.
-
-
-				</p>
-
-
-			</div>
-
-
-		</div>
-
-
-	</div>
-
-
-	<!------------------------------- WHO WHAT WE HEAR ---------------------->
-
-
-	<div class="slide" id="slide2" data-slide="4" data-stellar-background-ratio="0.5">
-
-		<div class="container clearfix">
-
-
-			<div class="grid_12 mission">
-				<p>WHAT WE HEAR YOU SAY:</p>
-			</div>
-
-
-
-            <div class="grid_1"></div>
-			<div class="grid_10">
-                    <div class="grid_1"></div>
-
-					<div class="box grid_3">
-
-						<p>There's no single source of guidance. Its hard to find and stay current on the good info</p>
-					</div>
-
-
-					<div class="box grid_3">
-						<p>There is no longer anyone keeping me on track to “do my homework”</p>
-					</div>
-
-
-					<div class="box grid_3">
-
-						<p>I don’t see the point in learning things beyond what my boss tells me</p>
-					</div>
-
-				</div>
-
-
-
-				    <div class="grid_1"></div>
-			            <div class="grid_10">
-                    <div class="grid_1"></div>
-
-					<div class="box grid_3">
-
-						<p>It’s more who you know than what you know</p>
-					</div>
-
-
-					<div class="box grid_3">
-
-						<p>I don’t even know what I’m interested in</p>
-					</div>
-
-					<div class="box grid_3">
-
-						<p>I can’t track the progress of my counselees and employees</p>
-					</div>
-
-				</div>
-
-			<div class="grid_12 mission">
-			    <p>We say: let us do the hard part of defining the plan, and all you need to do is execute.</p>
-				<p><blockquote>"Never worry about action, only inaction." - Winston Churchill</blockquote></p>
-			</div>
-
-
-		</div>
-
-
-	<!---------------------------- NEXT STEPS ------------------------------->
-
-		<div class="grid_12 content quote">
-			<a href="#" class="btn tab" >NEXT STEPS</a>
-		</div>
-
-	</div>
-
-<div id="slide5" data-slide="5">
-		<div class="container clearfix">
-
-			<div class="grid_12 content">
-			    <br>
-			    <br>
-			    <br>
-			    <b>
-				<p>Help us make this the best tool it can be. Send us an email at info@mettentotwetten.com or visit our blog to find updates (<a href="http://www.mettentot.com/blog">MettenTot Blog</a>)
-				</p></b>
-				<br>
-				<p>
-				<a href="/signup" class="btn">Sign Up</a>
-				</p>
-			</div>
-
-		</div>
-	</div>
-
+<script src="{{ STATIC_URL }}app/js/angular/others/filters.js"></script>
+<script src="{{ STATIC_URL }}app/js/angular/others/directives.js"></script>
 
 {% endblock %}
 
+{% block content %}
 
+Hello
 
+<!--<div class="padded-content">
+    <div id="main-content" class="container">
+        <div class="row">
+            <div class="span12">
+                <div class="pending-bg" pending-bar>
+                    <div class="alert alert-warning">loading ...</div>
+                </div>
+            </div>
+        </div>
+        <ng-view view-state></ng-view>
+    </div>
+</div>-->
 
+{% endblock %}

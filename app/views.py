@@ -1,17 +1,15 @@
 # Create your views here.
 from django.shortcuts import render, redirect
 from django.http import HttpResponseRedirect
-from app.models import Signup, SignupForm
+from django.shortcuts import render_to_response
+from django.template import RequestContext
 
-def signup(request):
-    if request.method == 'POST':
-        form = SignupForm(request.POST)
-        if form.is_valid():
-            form.save()
-            return redirect('/thanks')
 
-    else:
-        form = SignupForm()
+#======== angular app.js call ================
 
-    return render(request, 'signup.html', {'form':form,
-    })
+def home(request, template_name="index.html"):
+    return render_to_response(template_name,
+                              context_instance=RequestContext(request))
+
+
+#======== rest url definitions ===============

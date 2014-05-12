@@ -1,0 +1,61 @@
+<aside class="right-side">                
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    
+
+            <div class="page-header">
+                <h1>UI-Calendar</h1>
+            </div>
+                    <div class="span8">
+                        
+                              <div class="alert-success calAlert" ng-show="alertMessage != undefined && alertMessage != ''">
+                                <h4>{[{alertMessage}]}</h4>
+                              </div>
+                              
+                                <div class="btn-toolbar">
+                                <p class="pull-right lead">Calendar One View Options</p>
+                                <div class="btn-group">
+                                    <button class="btn btn-success" ng-click="changeView('agendaDay', myCalendar1)">AgendaDay</button>
+                                    <button class="btn btn-success" ng-click="changeView('agendaWeek', myCalendar1)">AgendaWeek</button>
+                                    <button class="btn btn-success" ng-click="changeView('month', myCalendar1)">Month</button>
+                                </div>
+                              </div>
+                            <div class="calendar" ng-model="eventSources" calendar="myCalendar1" config="uiConfig.calendar" ui-calendar="uiConfig.calendar"></div>                          
+                    </div>
+                </div>
+
+
+
+                <div class="row-fluid">
+                    <div class="span4">
+                        
+
+                        <div class="btn-group calTools">
+                          <button class="btn" ng-click="changeLang()">
+                            {[{changeTo}]}
+                          </button>              
+                          <button class="btn" ng-click="addRemoveEventSource(eventSources,eventSource)">
+                            Toggle Source
+                          </button>
+                          <button type="button" class="btn btn-primary" ng-click="addEvent()">
+                            Add Event
+                          </button>
+                        </div>
+
+
+
+                        <ul class="unstyled">
+                            <li ng-repeat="e in events">
+                                <div class="alert alert-info">
+                                    <a class="close" ng-click="remove($index)"><i class="icon-remove"></i></a>
+                                    <b> <input ng-model="e.title"></b> 
+                                    {[{e.start | date:"MMM dd"}]} - {[{e.end | date:"MMM dd"}]}
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </section><!-- /.content -->
+            </aside><!-- /.right-side -->
+        </div><!-- ./wrapper -->

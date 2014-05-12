@@ -1,0 +1,55 @@
+
+{% extends "landing_base.html" %}
+
+{% block content %}
+
+ <!-- bootstrap 3.0.2 -->
+        <link href="{{ STATIC_URL }}admin/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+       
+
+			<div id="nav" class="grid_9 omega">
+				<ul class="navigation">
+					<a href='/'>HOME</a>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+
+
+	<div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
+		<div id="content1" class="container clearfix">
+
+			<div class="grid_12 content">
+
+                    <h1> <p>Sign on In</p></h1>
+
+                        <div class ="grid_2"> </div>
+                        <div class ="well grid_8">
+
+	<body>{% if form.errors %}
+		<p class = "text-warning">UN and PW didnt match</p>
+		{% endif %}
+
+                        <form action="/auth" method='POST'>
+                            {% csrf_token %}
+                            <h5>
+<!--{{form}}-->
+			<label for="username">Username</label>
+			<input type="text" name="username" value ="" id="username">
+			<label for="password">Password</label>
+			<input type="password" name="password" value ="" id="password">
+
+ </h5>
+                            <button type="submit", name="signup_submit">Signup</button>
+                        </form>
+
+</body>
+
+                        </div>
+
+            </div>
+         </div>
+    </div>
+
+{% endblock %}

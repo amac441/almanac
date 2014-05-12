@@ -22,8 +22,6 @@ class Signup(models.Model):
     def __unicode__(self):
         return self.name
 
-class SignupForm(ModelForm):
-    class Meta:
-        model=Signup
+
 
 # admin.site.register(Signup)
